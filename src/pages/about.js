@@ -5,10 +5,9 @@ import Layout from "../components/layout"
 export default function About({ data }) {
   return (
     <Layout>
-      <h1>About {data.site.siteMetadata.title}</h1>
+      <h1>{data.site.siteMetadata.title}</h1>
       <p>
-        We're the only site running on your computer dedicated to showing the
-        best photos and videos of pandas eating lots of food.
+        プログラミング勉強中の19歳です。
       </p>
     </Layout>
   )
