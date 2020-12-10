@@ -10,6 +10,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     {
@@ -18,6 +19,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    //`gatsby-plugin-mdx`,
+    `gatsby-plugin-mdx`
   ],
 }
