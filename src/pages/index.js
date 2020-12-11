@@ -3,10 +3,15 @@ import { css } from "@emotion/react"
 import { Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import SEO from "../components/meta"
 
 export default function Home({ data }) {
   return (
     <Layout>
+      <SEO 
+        title="トップページ"
+        desc="Gatsby.jsの使い方を説明するためのサンプルページです。"
+      />
       <div>
         <h1
           css={css`
