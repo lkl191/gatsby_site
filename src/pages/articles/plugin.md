@@ -1,0 +1,30 @@
+---
+title: "gatsbyの良さそうなプラグイン"
+date: "2020-12-12"
+---
+
+###gatsby-source-filesystem
+
+###gatsby-plugin-react-helmet
+***
+ヘルメットという言葉通りhtmlで書いていた
+titleやmeta要素などのheadタグに値を
+渡すことができる。
+
+
+###gatsby-plugin-mdx
+***
+mdxとはjsx(React)で書いたコンポーネントを
+インポート出来るようにしたmarkdownファイルで、
+スタイリングが楽になる
+
+###gatsby-plugin-page-creator
+
+
+##画像プラグインセット
+
+***
+
+###gatsby-image
+
+###gatsby-sharp
