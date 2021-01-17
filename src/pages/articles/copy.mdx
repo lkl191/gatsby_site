@@ -1,0 +1,20 @@
+---
+title: "javascriptでコピー"
+date: "2021-12-11"
+---
+
+## html
+
+>`<button id="btn" class="btn">copy</button>`
+>``
+>`<code id="copy" class="copy">gatsby-node</code>`
+
+## javascript
+
+>`const cp = document.getElementById('copy');`
+>`const btn = document.getElementById('btn');`
+>`btn.addEventListener("click", () => `
+>`{`
+>`    navigator.clipboard.writeText(cp.innerHTML)`
+>`}`
+>`);`

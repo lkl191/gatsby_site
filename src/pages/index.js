@@ -21,11 +21,11 @@ export default function Home({ data }) {
         >
           一覧ページ
         </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
+        <h4>{data.allMdx.totalCount} Posts</h4>
+        {data.allMdx.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
-              to={node.fields.slug}
+            to={node.fields.slug}
               css={css`
                 text-decoration: none;
                 color: inherit;
@@ -56,7 +56,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
