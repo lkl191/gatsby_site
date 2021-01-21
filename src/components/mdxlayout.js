@@ -1,3 +1,5 @@
+/*
+
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
 import Chart from "./mdx/Chart"
@@ -11,3 +13,4 @@ export default function Layout({ children }) {
     <MDXProvider components={shortcodes}>{children}</MDXProvider>
   )
 }
+*/

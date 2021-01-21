@@ -1,9 +1,10 @@
 import React from "react"
 import { css } from "@emotion/react"
 import { Link, graphql } from "gatsby"
-import { rhythm } from "../utils/typography"
+
 import Layout from "../components/layout"
 import SEO from "../components/meta"
+import "./style.css"
 
 export default function Home({ data }) {
   return (
@@ -23,7 +24,15 @@ export default function Home({ data }) {
         </h1>
         <h4>{data.allMdx.totalCount} Posts</h4>
         {data.allMdx.edges.map(({ node }) => (
-          <div key={node.id}>
+          <div 
+            key={node.id}
+            style={{
+              border:'1px solid gray',
+              marginBottom: '5px',
+              padding: '5px',
+            }}
+            className='hover'
+            >
             <Link
             to={node.fields.slug}
               css={css`
@@ -31,11 +40,7 @@ export default function Home({ data }) {
                 color: inherit;
               `}
             >
-              <h3
-                css={css`
-                  margin-bottom: ${rhythm(1 / 4)};
-                `}
-              >
+              <h3>
                 {node.frontmatter.title}{" "}
                 <span
                   css={css`

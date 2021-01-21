@@ -1,12 +1,19 @@
 import React from "react"
 
 
-export default function Test ({ children }) {
-    <div
-     style={{
-         backgroundColor: `green`,
-     }}
-    >
-        {children}
-    </div>
+
+const Test = ({ children }) => {
+    return (
+        <div
+            style={{
+                backgroundColor: `green`,
+                color: 'red',
+            }}
+        >
+            {children}
+        </div>
+    )
+
 }
+
+export default Test
