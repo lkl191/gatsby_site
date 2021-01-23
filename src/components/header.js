@@ -15,15 +15,14 @@ const Header = ({ children }) => {
       )
     return (
         <div
-            style={{
-                height: '100px',
-            }}
+          style={{
+            height: '100px',
+          }}
         >
             <Link to={'/'}>
                 <h3
                  style={{
                      display: 'block',
-                     fontStyle: 'normal',
                  }}
                 >
                     {data.site.siteMetadata.title}
