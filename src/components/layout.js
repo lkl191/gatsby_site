@@ -12,7 +12,7 @@ import P from "./mdx/sentence"
 import Point from "./mdx/point"
 
 
-const shortcodes = { 
+const shortcodes = {
   Test,
   Code,
   H2title,
@@ -22,15 +22,15 @@ const shortcodes = {
 
 const Layout = ({ children }) => {
   return (
-    <div
-      style={{
-        maxWidth: '800px',
-        margin: 'auto',
-      }}
-    >
+    <div>
       <MDXProvider components={shortcodes}>
         <Header />
-        <div>
+        <div
+          style={{
+            maxWidth: '800px',
+            margin: 'auto',
+          }}
+        >
           {children}
         </div>
       </MDXProvider>

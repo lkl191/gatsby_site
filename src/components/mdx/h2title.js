@@ -1,6 +1,6 @@
 import React from "react"
 
-const H2title = ({ children }) => {
+const H2title = ({ props }) => {
     return (
         <h2
             style={{
@@ -9,7 +9,7 @@ const H2title = ({ children }) => {
                 margin: "100px 5px",
             }}
         >
-            {children}
+            {props}
         </h2>
 
     )

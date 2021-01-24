@@ -1,27 +1,44 @@
 import React from "react"
 
-const Code = ({ children }) => {
+const Code = ({ copycode, langage, files }) => {
+
+    const copy = () => {
+        navigator.clipboard.writeText(copycode)
+    }
+
     return (
-        <code
+        <div
             style={{
-                display: 'block',
-                color: 'black',
-                backgroundColor: 'orange',
-                width: '700px',
-                padding: '10px 5px',
+                border: "1px solid black",
             }}
         >
-            <button
+            <div
+                style={{
+                    borderBottom: "1px solid gray",
+                }}
+            >
+                {files}
+            </div>
+            <div>
+                {langage}
+                <button
+                    onClick={copy}
+                    style={{
+                        textAlign: "right",
+                    }}
+                >copy</button>
+            </div>
+            <code
                 style={{
                     display: 'block',
-                    border: 'none',
-                    margin: '3px auto',
-                    marginRight: '3px',
-                    fontSize: '1.5em',
+                    color: 'black',
+                    backgroundColor: 'orange',
+                    padding: '10px 5px',
                 }}
-            >copy</button>
-            {children}
-        </code>
+            >
+                {copycode}
+            </code>
+        </div>
     )
 }
 

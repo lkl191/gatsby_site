@@ -4,20 +4,34 @@ date: "2020-12-08"
 category: "wsl2"
 ---
 
-## import
+<H2title
+    props='import'
+/>
+
+<Code
+    copycode='wsl --import [distribution_name] [path/to/install/dir] [file_name].tar --version 2'
+    langage='Shell'
+/>
 
 
->`wsl --import [distribution_name] [path/to/install/dir] [file_name].tar --version 2`
+<H2title
+    props='デフォルトユーザーの変更'
+/>
+
+<Code
+    copycode='Function WSL-SetDefaultUser ($distro, $user) { Get-ItemProperty Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\*\ DistributionName | Where-Object -Property DistributionName -eq $distro | Set-ItemProperty -Name DefaultUid -Value ((wsl -d $distro -u $user -e id -u) | Out-String); };'
+/>
+
+<Code
+    copycode='WSL-SetDefaultUser <DistroName> <UserName>'
+/>
 
 
-## デフォルトユーザーの変更
->`Function WSL-SetDefaultUser ($distro, $user) { Get-ItemProperty Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss\*\ DistributionName | Where-Object -Property DistributionName -eq $distro | Set-ItemProperty -Name DefaultUid -Value ((wsl -d $distro -u $user -e id -u) | Out-String); };`
+<H2title
+    props='export'
+/>
 
->`WSL-SetDefaultUser <DistroName> <UserName>`
+<Code
+    copycode='wsl --export [distribution_name] [file_name].tar'
+/>
 
-## export
->`wsl --export [distribution_name] [file_name].tar`
-
-こんにちは
-
-こんにちは

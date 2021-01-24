@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/meta"
-import "./style.css"
+//import "./style.css"
 
 export default function Home({ data }) {
   return (
