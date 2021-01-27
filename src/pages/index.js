@@ -1,14 +1,19 @@
 import React from "react"
 import { css } from "@emotion/react"
 import { Link, graphql } from "gatsby"
-
+//import Header from "../components/header"
 import Layout from "../components/layout"
+
+
 import SEO from "../components/meta"
 //import "./style.css"
 
 export default function Home({ data }) {
   return (
     <Layout>
+      
+    <div>
+      
       <SEO
         title="トップページ"
         desc="Gatsby.jsの使い方を説明するためのサンプルページです。"
@@ -63,6 +68,7 @@ export default function Home({ data }) {
           </div>
         ))}
       </div>
+    </div>
     </Layout>
   )
 }

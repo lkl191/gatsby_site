@@ -2,6 +2,7 @@ import React from "react"
 
 import { MDXProvider } from "@mdx-js/react"
 import PropTypes from "prop-types"
+
 import "../styles/layout.css"
 
 import Header from "./header"
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
     <div>
       <MDXProvider components={shortcodes}>
         <Header />
+        
         <div
           style={{
             maxWidth: '800px',

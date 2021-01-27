@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `素焼きアーモンド`,
+    title: `サンプル`,
   },
   plugins: [
     {
