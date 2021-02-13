@@ -2,15 +2,10 @@ import React from "react"
 
 
 
-const Test = ({ children }) => {
+const Test = ({ props }) => {
     return (
-        <div
-            style={{
-                backgroundColor: `green`,
-                color: 'red',
-            }}
-        >
-            {children}
+        <div>
+            {props}
         </div>
     )
 

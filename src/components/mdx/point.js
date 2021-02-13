@@ -1,16 +1,9 @@
 import React from "react"
 
-const Point = ({ children }) => {
+const Point = ({ props }) => {
     return (
-        <div
-         style={{
-             margin: "100px 30px",
-             backgroundColor: "#022",
-             color: "#bee7ff",
-             padding: "50px",
-         }}
-        >
-            {children}
+        <div>
+            {props}
         </div>
     )
 }

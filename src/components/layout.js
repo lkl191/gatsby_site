@@ -26,12 +26,12 @@ const Layout = ({ children }) => {
     <div>
       <MDXProvider components={shortcodes}>
         <Header />
-        
+
         <div
-          style={{
-            maxWidth: '800px',
-            margin: 'auto',
-          }}
+          className="
+            m-auto
+            max-w-screen-md
+          "
         >
           {children}
         </div>

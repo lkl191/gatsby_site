@@ -1,14 +1,9 @@
 import React from "react"
 
-const P = ({ children }) => {
+const P = ({ props }) => {
     return (
-        <p
-            style={{
-                color: 'green',
-                margin: "100px 5px",
-            }}
-        >
-            {children}  
+        <p>
+            {props}  
         </p>
     )
 }

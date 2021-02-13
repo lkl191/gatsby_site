@@ -15,34 +15,33 @@ const Header = ({ children }) => {
   )
   return (
     <div
-      style={{
-        backgroundColor: "#bee7ff",
-      }}
+      className="
+        bg-indigo-900
+        text-green-200
+        h-20
+        m-auto
+      "
     >
-      <div
-        style={{
-          height: '100px',
-          maxWidth: "950px",
-          margin: "auto",
-        }}
-      >
+      <div>
         <Link to={'/'}>
           <h3
-            style={{
-              display: 'block',
-            }}
+            className="
+              text-3xl
+            "
           >
             {data.site.siteMetadata.title}
           </h3>
         </Link>
-        <Link
-          to={'/about/'}
-          style={{
-            float: 'right',
-          }}
+        <div
+          className="
+            float-right
+            m-auto
+          "
         >
+        <Link to={"about"}>
           About
             </Link>
+        </div>
         {children}
       </div>
     </div>

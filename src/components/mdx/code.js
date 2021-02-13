@@ -7,35 +7,17 @@ const Code = ({ copycode, langage, files }) => {
     }
 
     return (
-        <div
-            style={{
-                border: "1px solid black",
-            }}
-        >
-            <div
-                style={{
-                    borderBottom: "1px solid gray",
-                }}
-            >
+        <div>
+            <div>
                 {files}
             </div>
             <div>
                 {langage}
                 <button
                     onClick={copy}
-                    style={{
-                        textAlign: "right",
-                    }}
-                >copy</button>
+                    >copy</button>
             </div>
-            <code
-                style={{
-                    display: 'block',
-                    color: 'black',
-                    backgroundColor: 'orange',
-                    padding: '10px 5px',
-                }}
-            >
+            <code>
                 {copycode}
             </code>
         </div>
